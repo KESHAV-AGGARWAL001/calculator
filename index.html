@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple calculator</title>
+  </head>
+  <body>
+    <h1 id="design">MY PERSONAL CALCULATOR</h1>
+    <form name="forms" id="formi">
+      <input type="text" name="solution" value="" class="sizing" />
+      <br />
+      <div class="bgchange">
+        <input
+          type="button"
+          value="7"
+          onclick="forms.solution.value += '7' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="8"
+          onclick="forms.solution.value += '8' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="9"
+          onclick="forms.solution.value += '9' "
+          class="colourdena"
+        />
+      </div>
+      <div class="bgchange">
+        <input
+          type="button"
+          value="4"
+          onclick="forms.solution.value += '4' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="5"
+          onclick="forms.solution.value += '5' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="6"
+          onclick="forms.solution.value += '6' "
+          class="colourdena"
+        />
+        <br />
+      </div>
+      <div class="bgchange">
+        <input
+          type="button"
+          value="1"
+          onclick="forms.solution.value += '1' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="2"
+          onclick="forms.solution.value += '2' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="3"
+          onclick="forms.solution.value += '3' "
+          class="colourdena"
+        />
+        <br />
+      </div>
+      <div class="bgchange">
+        <input
+          type="button"
+          value="*"
+          onclick="forms.solution.value += '*' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="+"
+          onclick="forms.solution.value += '+' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="-"
+          onclick="forms.solution.value += '-' "
+          class="colourdena"
+        />
+        <br />
+      </div>
+      <div class="bgchange">
+        <input
+          type="button"
+          value="0"
+          onclick="forms.solution.value += '0' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="/"
+          onclick="forms.solution.value += '/' "
+          class="colourdena"
+        />
+        <input
+          type="button"
+          value="="
+          onclick="forms.solution.value = eval(forms.solution.value)"
+          class="colourdena"
+        />
+      </div>
+      <input
+        type="button"
+        value="clear"
+        onclick="forms.solution.value = ' ' "
+        class="clearform"
+      />
+    </form>
+    <div style="display: flex; justify-content: center; align-items: center; column-gap: 10px;">
+      <button
+        class="bluecolor"
+        style="
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background-color: rgb(153, 240, 230);
+        "
+        onclick="changetoblue()"
+      ></button>
+
+      <button
+        class="greencolor"
+        style="
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background-color: rgba(85, 241, 90, 0.806);
+        "
+        onclick="changetogreen()"
+      ></button>
+      <button
+        class="redcolor"
+        style="
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background-color: rgba(235, 142, 103, 0.806);
+        "
+        onclick="changetored()"
+      ></button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

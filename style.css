@@ -1,0 +1,44 @@
+#formi{
+    display: flex;
+    flex-direction: column;
+    border: 2px groove darksalmon;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 600px;
+}
+
+.colourdena{
+    background-color: #f6abba;
+    color: black;
+    border: 2px solid rgb(104, 236, 243);
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.bgchange{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sizing{
+    border: 3px groove pink;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.clearform{
+    border: 3px groove pink;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#design{
+    color: darkmagenta;
+    display: flex;
+    justify-content: center;
+}
+
